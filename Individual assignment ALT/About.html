@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Lesotho - Kingdom in the Sky</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--BOOTSTRAP Navbar-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">
+           Visit Lesotho</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="destination.html">Destination</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="contact.html"> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section d-flex align-items-center justify-content-center">
+      <div class="container">
+        <h1 class="display-3 fw-bold mb-3">Discover the Kingdom in the Sky</h1>
+        <p class="lead mb-4">Experience breathtaking mountains, rich Basotho culture, and unforgettable adventure.</p>
+        <a href="#destinations" class="btn btn-lesotho btn-lg">Explore Destinations</a>
+      </div>
+    </section>
+
+    <!-- 2. BOOTSTRAP COMPONENT: Carousel Section -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Highlights of Lesotho</h2>
+        <div id="heroCarousel" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Malets.JPG" class="d-block w-100" style="height:450px; object-fit:cover;" alt="Maletsunyane Falls in Semonkong">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Maletsunyane Falls</h5>
+                <p>One of the highest single-drop waterfalls in Africa.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Tshehlanyane.JPG" class="d-block w-100" style="height:450px; object-fit:cover;" alt="T'sehlanyane's landscapes">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Ts'ehlanyane National Park</h5>
+                <p>Clearly marked hiking trails on unforgiving terrain for the thrill seekers.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3. BOOTSTRAP COMPONENT: Cards & Grid System -->
+    <section id="destinations" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Popular Tourist Destinations</h2>
+          <p class="text-muted">Top attractions to add to your itinerary</p>
+        </div>
+        <div class="row g-4">
+
+
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card h-100 shadow-sm">
+              <img src="Mohale Tours.JPG" class="card-img-top" alt="Views of the river that feeds Katse Dam">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Calming Views</span>
+                <h5 class="card-title">Wining and Dining Outdoors</h5>
+                <p class="card-text">Mohale Dam is fed primarily by the Senqunyane River.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#infoModal" onclick="setModalContent('Semonkong', 'Semonkong is renowned for its 204m waterfall and outdoor activities.')">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card h-100 shadow-sm">
+            <img src="TBCV.AVIF" class="card-img-top" alt="Thaba Bosiu Cultural Village">
+              <div class="card-body">
+                <span class="badge bg-success mb-2">Heritage</span>
+                <h5 class="card-title">Thaba Bosiu Cultural Village</h5>
+                <p class="card-text">The historic mountain stronghold of King Moshoeshoe I and the birthplace of the nation.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#infoModal" onclick="setModalContent('Thaba Bosiu', 'Thaba Bosiu is a sandstone plateau that served as the capital of King Moshoeshoe I.')">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card h-100 shadow-sm">
+              <img src="skiCulture.JPG" class="card-img-top" alt="Afriski Mountain Resort">
+              <div class="card-body">
+                <span class="badge bg-warning text-dark mb-2">Resort</span>
+                <h5 class="card-title">Afriski Mountain Resort</h5>
+                <p class="card-text">Afriski is the only skiing resort in Lesotho. Perfect for kids and adults and is fun all around.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#infoModal" onclick="setModalContent('Afriski', 'Afriski offers snowboarding and skiing in winter, and mountain biking in summer.')">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- INTERACTIVE GALLERY SECTION-->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Photo Gallery</h2>
+
+        <!-- Main Image Preview Box -->
+        <div class="text-center mb-4">
+          <img id="galleryPreview" src="Makoanyane.JPG" class="img-fluid rounded shadow" style="max-height: 400px; width: 100%; object-fit: cover;" alt="Preview Display">
+          <h5 id="galleryCaption" class="mt-2 text-muted">World War II Memorial Park</h5>
+        </div>
+        <!-- Thumbnail Controls -->
+        <div class="d-flex justify-content-center gap-3">
+          <button class="btn btn-secondary" onclick="changeImage(-1)">&laquo; Previous</button>
+          <button class="btn btn-secondary" onclick="changeImage(1)">Next &raquo;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM SECTION: User Registration & Validation -->
+    <section id="register" class="py-5 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card p-4 shadow-sm">
+              <h3 class="fw-bold mb-3 text-center">Tourist Registration</h3>
+              
+              <!--COMPONENT: Alerts for response -->
+              <div id="alertBox" class="alert d-none" role="alert"></div>
+
+              <form id="registrationForm" novalidate>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="fullName" required>
+                  <div class="invalid-feedback" id="nameError">Please enter your full name.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="email" required>
+                  <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="+266 1234 5678" required>
+                  <div class="invalid-feedback" id="phoneError">Please enter a valid phone number.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="gender" class="form-label">Gender</label>
+                  <select class="form-select" id="gender">
+                    <option value="">Select Gender...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password *</label>
+                  <input type="password" class="form-control" id="password" required minlength="6">
+                  <div class="invalid-feedback" id="passwordError">Password must be at least 6 characters long.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirm Password *</label>
+                  <input type="password" class="form-control" id="confirmPassword" required>
+                  <div class="invalid-feedback" id="confirmPasswordError">Passwords do not match.</div>
+                </div>
+
+                <button type="submit" class="btn btn-lesotho w-100">Register Account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
+      <footer class="bg-dark text-white py-4 mt-auto">
+      <p>&copy;  2026 Home Away From Home Tourism. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Destination Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          Detailed information will load here.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--BootstrapJS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

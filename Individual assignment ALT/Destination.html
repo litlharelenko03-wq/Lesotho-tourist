@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html"><i class="fa-solid fa-mountain me-2"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="destination.html">Destination</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-center fw-bold mb-3">Highest Ranking Destinations</h1>
+        <p class="text-center text-muted mb-5">Explore the iconic natural wonders and cultural landmarks of Lesotho.</p>
+
+        <!-- Grid of Destinations -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="card custom-card h-100">
+                    <img src="PioneerMall.WEBP" class="card-img-top" alt="The capital and largest city of the Kingdom of Lesotho">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Maseru Region</span>
+                        <h5 class="card-title fw-bold">Pioneer Mall in Maseru</h5>
+                        <p class="card-text"> The first shopping mall in Lesotho.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card custom-card h-100">
+                    <img src="Liphofung.JPG" class="card-img-top" alt="Liphofung Cave and Cultural Heritage Site">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Rich Cultural Displays </span>
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">Part of the Maloti-Drakensberg National Heritage site, offering rare rock formations and unique flora.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card custom-card h-100">
+                    <img src="Mohale-Dam.JPG" class="card-img-top" alt="Mohale Dam engineering structure in Lesotho">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Thaba-Tseka</span>
+                        <h5 class="card-title fw-bold">Mohale Dam</h5>
+                        <p class="card-text">An architectural marvel nestled in the mountains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Accordion Component -->
+        <h3 class="fw-bold mb-4">What to be aware of before your trip</h3>
+        <div class="accordion shadow-sm" id="destinationsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        When is the best time to visit Lesotho?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#destinationsAccordion">
+                    <div class="accordion-body">
+                        Lesotho is a year-round destination! October to April is warm and great for hiking and horseback riding, while June to August offers snowy conditions perfect for skiing at Afriski.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Do I need a 4x4 vehicle?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#destinationsAccordion">
+                    <div class="accordion-body">
+                        While main highways connecting Maseru, Leribe, and Mohale's Hoek are paved, a 4x4 is strongly recommended when tackling Sani Pass or navigating remote mountain passes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2026 Home Away From Home Tourism. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
